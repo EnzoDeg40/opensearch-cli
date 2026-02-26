@@ -1,11 +1,11 @@
-# opensearch-cli
+# osearch-cli
 
 CLI to inspect OpenSearch without the dashboard.
 
 ## Installation
 
 ```bash
-pip install opensearch-cli
+pip install osearch-cli
 ```
 
 ## Usage

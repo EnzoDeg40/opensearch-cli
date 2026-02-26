@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "opensearch-cli"
+name = "osearch-cli"
 version = "0.1.0"
 description = "CLI to inspect OpenSearch without the dashboard"
 readme = "README.md"
