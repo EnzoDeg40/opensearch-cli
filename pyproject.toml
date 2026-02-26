@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "opensearch-cli"
+version = "0.1.0"
+description = "CLI to inspect OpenSearch without the dashboard"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.9"
+authors = [{ name = "EnzoDeg40" }]
+keywords = ["opensearch", "cli", "search", "elasticsearch"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+]
+dependencies = [
+    "opensearch-py>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "rich>=13.0.0",
+]
+
+[project.scripts]
+os-cli = "opensearch_cli.main:main"
+
+[project.urls]
+Homepage = "https://github.com/EnzoDeg40/opensearch-cli"
+Repository = "https://github.com/EnzoDeg40/opensearch-cli"
+Issues = "https://github.com/EnzoDeg40/opensearch-cli/issues"
