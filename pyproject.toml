@@ -26,6 +26,9 @@ dependencies = [
 [project.scripts]
 os-cli = "opensearch_cli.main:main"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/opensearch_cli"]
+
 [project.urls]
 Homepage = "https://github.com/EnzoDeg40/opensearch-cli"
 Repository = "https://github.com/EnzoDeg40/opensearch-cli"
