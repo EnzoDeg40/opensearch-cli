@@ -6,7 +6,11 @@ def black_list(
 ) -> Union[Dict[str, Any], List[Any]]:
     """Remove specified fields from any level of a nested dict or list."""
     if isinstance(data, dict):
-        return {k: black_list(v, fields) for k, v in data.items() if k not in fields}
+        return {
+            k: black_list(v, fields)
+            for k, v in data.items()
+            if not any(f in k for f in fields)
+        }
     elif isinstance(data, list):
         return [black_list(item, fields) for item in data]
     return data
